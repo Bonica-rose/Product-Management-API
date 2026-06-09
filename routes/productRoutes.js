@@ -20,26 +20,12 @@ router.get("/stats", getProductStats);
 
 router.get("/:id", getProduct);
 
-router.post(
-    "/",
-    validateProduct,
-    createProduct
-);
+router.post("/", validateProduct, createProduct);
 
-router.put(
-    "/:id",
-    validateProduct,
-    updateProduct
-);
+router.put("/:id",validateProduct,updateProduct);
 
-router.patch(
-    "/:id",
-    patchProduct
-);
+router.patch("/:id", patchProduct);
 
-router.delete(
-    "/:id",
-    deleteProduct
-);
+router.delete("/:id", deleteProduct);
 
 module.exports = router;
